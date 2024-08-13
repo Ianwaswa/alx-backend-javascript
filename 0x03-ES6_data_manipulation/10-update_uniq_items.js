@@ -1,8 +1,8 @@
 /**
- * Updates the quantity of grocery items that have a quantity of 1 to 100.
- * @param {Map<String, number>} map - A map where the keys are grocery names and the values are their quantities.
+ * Changes the quantity of unique grocery items to 100.
+ * @param {Map<String, number>} map - A map of the name of a
+ * grocery and its quantity.
  * @author Bezaleel Olakunori <https://github.com/B3zaleel>
- * @throws {Error} If the input is not a Map.
  */
 export default function updateUniqueItems(map) {
   if (!(map instanceof Map)) {

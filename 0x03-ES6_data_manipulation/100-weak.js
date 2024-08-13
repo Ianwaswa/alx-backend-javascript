@@ -1,21 +1,20 @@
 /**
- * A weak map that tracks API endpoints and the number of calls made to each.
+ * A weak map of endpoints and the number of calls made.
  */
 export const weakMap = new WeakMap();
 
 /**
- * The maximum allowed number of calls for an endpoint before it is considered overloaded.
+ * The maximum number of calls for an endpoint.
  */
 const MAX_ENDPOINT_CALLS = 5;
 
 /**
- * Tracks the number of calls made to a specified API endpoint and throws an error if the call limit is exceeded.
+ * Tracks the number of calls made to an API's endpoint.
  * @param {{
  *   protocol: String,
  *   name: String,
- * }} endpoint - The endpoint object containing protocol and name to track.
- * @author Bezaleel Olakunori <https://github.com/B3zaleel>
- * @throws {Error} If the number of calls exceeds the maximum allowed limit.
+ * }} endpoint - The endpoint to make a request to.
+ * @author Ian Juma <https://github.com/Ianwaswa>
  */
 export function queryAPI(endpoint) {
   if (!weakMap.has(endpoint)) {
