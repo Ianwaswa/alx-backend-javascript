@@ -1,17 +1,13 @@
 /**
- * Filters and returns the students who are in a specified location.
+ * Retrieves students in a given location.
  * @param {{
  *   id: Number,
  *   firstName: String,
  *   location: String
- * }[]} students - An array of student objects.
- * @param {String} city - The location to filter by.
+ * }[]} students - The list of students.
+ * @param {String} city - The location.
  * @author Bezaleel Olakunori <https://github.com/B3zaleel>
- * @returns {{
- *   id: Number,
- *   firstName: String,
- *   location: String
- * }[]} An array of student objects who are in the specified location. Returns an empty array if the input is not an array.
+ * @returns
  */
 export default function getStudentsByLocation(students, city) {
   if (students instanceof Array) {
