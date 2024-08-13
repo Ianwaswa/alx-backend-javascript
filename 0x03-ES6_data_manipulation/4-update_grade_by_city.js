@@ -1,22 +1,17 @@
 /**
- * Updates the grades of students in a specific city.
+ * Updates the grades of a list of students in a given city.
  * @param {{
  *   id: Number,
  *   firstName: String,
  *   location: String
- * }[]} students - An array of student objects.
- * @param {String} city - The city where the students are located.
+ * }[]} students - The list of students.
+ * @param {*} city - The city of students.
  * @param {{
  *   studentId: Number,
  *   grade: Number,
- * }[]} newGrades - An array of objects representing the new grades for students.
+ * }[]} newGrades - The new grades to be given to a student.
  * @author Bezaleel Olakunori <https://github.com/B3zaleel>
- * @returns {{
- *   id: Number,
- *   firstName: String,
- *   location: String,
- *   grade: String | Number
- * }[]} An array of student objects with updated grades for those in the specified city. Students without a grade will have 'N/A'.
+ * @returns {{id: Number, firstName: String, location: String}[]}
  */
 export default function updateStudentGradeByCity(students, city, newGrades) {
   const defaultGrade = { grade: 'N/A' };
