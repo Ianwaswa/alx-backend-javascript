@@ -3,7 +3,7 @@
  * @param {Number} length - The length of the buffer.
  * @param {Number} position - The position in the buffer to modify.
  * @param {Number} value - The value to be set at the specified position.
- * @author Bezaleel Olakunori <https://github.com/B3zaleel>
+ * @author Ian Juma <https://github.com/Ianwaswa>
  * @returns {DataView} A DataView representing the buffer with the modified value.
  * @throws {Error} If the specified position is outside the buffer's range.
  */
